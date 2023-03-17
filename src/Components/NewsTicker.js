@@ -45,7 +45,7 @@ function NewsTicker() {
   return (
     <div className={classes.textContainer}>
       <div>
-      <Typography variant="body1" className={classes.line2} style={{padding: '10px', color: '#660066', fontWeight: 'bold', fontSize: '15px'}}>For any queries regarding online services, kindly contact us at obpsud@gmail.com</Typography>
+      <Typography variant="body1" className={classes.line2} style={{padding: '10px', color: '#1A0019', fontWeight: 'bold', fontSize: '15px'}}>For any queries regarding online services, kindly contact us at :</Typography>
       </div>
     </div>
   );

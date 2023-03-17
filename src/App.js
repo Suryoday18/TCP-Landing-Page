@@ -22,8 +22,8 @@ function App() {
       <ImageSlider images={images}/>
       <NewsTicker />
       <Card />
-      <Info />
       <DetailTable />
+      <Info />
       <Facilation />
       <FormAndCheckList />
       <Footer />
