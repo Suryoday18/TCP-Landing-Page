@@ -5,12 +5,12 @@ import React from 'react';
 const DetailTable = () => {
     return(
         <React.Fragment>
-            <Typography variant='h6' style={{marginLeft: '500px', marginTop: '20px', fontWeight: 'bold', fontSize: '30px',color: '#4D004C'}}>Real Time Application Status</Typography>
+            <Typography variant='h6' style={{marginLeft: '500px', marginTop: '20px', fontWeight: 'bold', fontSize: '30px',color: '#001A00'}}>Real Time Application Status</Typography>
             <Box sx={{ width: '90%', maxWidth: 1200, backgroundColor: '#FFF5FF', margin: '15px', marginLeft: '70px'}} >
             <TableContainer>
                 <Table>
                 <TableHead>
-                    <TableRow style={{background: 'linear-gradient(to right, #FF99FC, #CC00C5)', color: 'white'}}>
+                    <TableRow style={{background: 'linear-gradient(to right, #80FF80, #00B300)', color: 'white'}}>
                     <TableCell >Service(s)</TableCell>
                     {/* <Divider orientation="vertical"  /> */}
                     <TableCell>Time-Limit Prescribed as per PSGA</TableCell>
@@ -23,7 +23,7 @@ const DetailTable = () => {
                     <TableCell>Maximum</TableCell>
                     </TableRow>
                 </TableHead>
-                <TableBody style={{color: '#4D004C', fontWeight: 'bold', background: 'linear-gradient(to right, #FFF5FF, #FFE5FF)'}}>
+                <TableBody style={{color: '#4D004C', fontWeight: 'bold', background: 'linear-gradient(to right, #ffffff, #99FF99)'}}>
                 <TableRow>
                     <TableCell>Application for Permission of Sub-division/development of Land</TableCell>
                     <TableCell>60</TableCell>

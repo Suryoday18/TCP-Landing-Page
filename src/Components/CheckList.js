@@ -60,7 +60,7 @@ const Checklist = () => {
       <Typography variant="body1" className={classes.paragraph}>
       Inspection Procedure & Checklist For ...
       </Typography>
-      <Button style={{color: 'white', padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '10px', marginBottom: '30px', background: 'linear-gradient(to right, #E600E5, #330032)', transform: 'translateX(400px)' }}>Read More +</Button>
+      <Button style={{color: 'white', padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '10px', marginBottom: '30px', background: 'linear-gradient(to right, #00CC00, #003300)', transform: 'translateX(400px)' }}>Read More +</Button>
     </div>
   );
 };

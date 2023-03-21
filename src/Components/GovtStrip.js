@@ -3,7 +3,7 @@ import image from './Azadi.png'
 
 const GovtStrip = () => {
   return (
-    <Box sx={{ height: 80, display: 'flex', flexDirection: 'row', bgcolor: '#fff5ff' }}>
+    <Box sx={{ height: 80, display: 'flex', flexDirection: 'row', bgcolor: '#e5ffe5' }}>
         <Box sx={{ display: 'flex', flexDirection: 'row'}}>
         <img src="https://tcp.hp.gov.in/img/eng_logo.png" alt="image1" style={{ width: '300px', height: '60px', padding: '10px', marginLeft: '30px'}} />
         </Box>

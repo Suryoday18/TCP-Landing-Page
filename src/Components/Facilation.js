@@ -85,14 +85,14 @@ const Facilation = () => {
   const classes = useStyles();
 
   return (
-    <div style={{background: 'linear-gradient(to right, #FFF5FF, #FFB3FC)', margin: '20px'}}>
-      <Typography variant="h4" component="h1" className={classes.heading} style={{marginLeft: '500px', color: '#330032', fontWeight: 'bold', fontStyle: 'italic'}}>
+    <div style={{background: 'linear-gradient(to right, #FFFFFF, #33FF33)', margin: '20px'}}>
+      <Typography variant="h4" component="h1" className={classes.heading} style={{marginLeft: '500px', color: '#001A00', fontWeight: 'bold', fontStyle: 'italic'}}>
         Citizen Facilitation
       </Typography>
       <Grid container justifyContent="center">
         {cards.map((card) => (
           <Grid item xs={12} sm={6} md={2} key={card.title}>
-            <Card className={classes.card} style={{backgroundColor: '#B300AD'}}>
+            <Card className={classes.card} style={{backgroundColor: '#008000'}}>
             <CardContent className={classes.transparentCard}>
                 <Typography gutterBottom variant="p" component="p" style={{fontSize: '13px', margin: '12px', color: 'white',fontWeight: 'bold'}}>
                   {card.title}

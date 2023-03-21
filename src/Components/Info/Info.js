@@ -5,7 +5,7 @@ import Notification from './Notification';
 
 const Info = () => {
   return (
-    <Box sx={{ height: 350, display: 'flex', margin: '20px', alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row', background: 'linear-gradient(to right, #FFE5FF, #FFCCFF)', marginTop: '50px' }}>
+    <Box sx={{ height: 350, display: 'flex', margin: '20px', alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row', background: 'linear-gradient(to right, #00E600, #004D00)', marginTop: '50px' }}>
         {/* <FormChecklist /> */}
         <Notification />
         <Development />

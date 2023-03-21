@@ -8,7 +8,7 @@ const useStyles = makeStyles({
     borderRadius: '10px',
     fontSize: '12px',
     backgroundColor: '#4ca9d9',
-    backgroundImage: 'linear-gradient(to right, #FFCCFF, #660066)',
+    background: 'linear-gradient(to right, #F5FFF5, #003300)',
     transition: 'background-color: .5s ease',
     width: '300px',
     height: '60px',
@@ -22,9 +22,9 @@ const useStyles = makeStyles({
 const ImportantLinks = () => {
   const classes = useStyles()
   return (
-    <Card style={{maxWidth: 900, margin: '10px', boxShadow: 'rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset'}}>
+    <Card style={{maxWidth: 900, margin: '10px', background: 'linear-gradient(to right,  #F5FFF5, #80FF80)', boxShadow: 'rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset'}}>
       <CardContent>
-        <Typography variant="h6" style={{ backgroundColor: '#800080', margin: '10px', color: "white", padding: "10px", fontSize: '15px', borderRadius: '5px' }}>
+        <Typography variant="h6" style={{ backgroundColor: '#003300', margin: '10px', color: "white", padding: "10px", fontSize: '15px', borderRadius: '5px' }}>
             Important Websites/Links
         </Typography>
         <Button variant="body1" component="p" className={classes.button} style={{ padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '20px'}}>

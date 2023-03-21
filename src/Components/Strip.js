@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Typography } from '@mui/material';
 
 function Strip() {
   return (
-    <AppBar position="static" style={{backgroundColor:'#800080', height: '36px'}}>
+    <AppBar position="static" style={{backgroundColor:'#003300', height: '36px'}}>
       <Toolbar>
        <Typography variant="h6" component="div" style={{marginBottom: '24px', fontSize: '14px'}}>
         हिमाचल प्रदेश सरकार

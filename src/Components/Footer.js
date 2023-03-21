@@ -2,7 +2,7 @@ import { Box, Typography, Divider } from '@mui/material';
 
 const Footer = () => {
   return (
-    <Box sx={{ height: 200, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', bgcolor: '#FFCCFD' }}>
+    <Box sx={{ height: 200, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', bgcolor: '#E5FFE5' }}>
         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
           <Typography variant="h5"  sx={{ margin: '10px', fontSize: '15px' }}>Total Visitors: 232128</Typography>
           <Divider style={{ margin: '10px 0' }} />
