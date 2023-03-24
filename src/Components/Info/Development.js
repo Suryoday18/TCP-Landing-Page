@@ -32,7 +32,7 @@ const useStyles = makeStyles({
       display: 'flex',
       flexWrap: 'wrap'
     },
-    background: 'linear-gradient(to right, #FFFFFF, #80FF80)',
+    // background: 'linear-gradient(to right, #FFFFFF, #80FF80)',
   },
   listItem: {
     width: '50%',
@@ -57,19 +57,19 @@ const Development = () => {
   return (
     <Card className={classes.cardContainer}>
       <CardContent>
-        <Typography variant="h5" component="h2" gutterBottom style={{fontSize: '22px', color: '#004D00', fontWeight: 'bold'}}>
+        <Typography variant="h5" component="h2" gutterBottom style={{fontSize: '22px', color: '#1F4A7C', fontWeight: 'bold'}}>
           Development Plans
         </Typography>
         <List>
           {IMAGES.map((image, index) => (
             <ListItem key={index} className={classes.listItem}>
               <CardMedia className={classes.media} image={image.src} title={image.description} />
-              <Typography variant="body1" style={{marginLeft: '20px', color: '#004D00', marginTop: '20px'}}>{image.description}</Typography>
+              <Typography variant="body1" style={{marginLeft: '20px', color: '#1F4A7C', marginTop: '20px'}}>{image.description}</Typography>
             </ListItem>
           ))}
         </List>
       </CardContent>
-      <Button onClick={handleReadMoreClick} style={{width: '120px', height: '40px', margin: '20px',   padding: '5px', borderColor: '#003300', color: '#003300', border: '2px solid #003300', backgroundColor: 'transparent', }}>Read More +</Button>
+      <Button onClick={handleReadMoreClick} style={{width: '120px', height: '40px', margin: '20px',   padding: '5px', borderColor: '#1F4A7C', color: '#1F4A7C', border: '2px solid #1F4A7C', backgroundColor: 'transparent', }}>Read More +</Button>
     </Card>
   );
 }

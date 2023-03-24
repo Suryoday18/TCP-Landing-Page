@@ -3,12 +3,16 @@ import image from './Azadi.png'
 
 const GovtStrip = () => {
   return (
-    <Box sx={{ height: 80, display: 'flex', flexDirection: 'row', bgcolor: '#e5ffe5' }}>
+    <Box sx={{ height: 150, display: 'flex', flexDirection: 'row', bgcolor: '#fff', color: 'black' }}>
         <Box sx={{ display: 'flex', flexDirection: 'row'}}>
-        <img src="https://tcp.hp.gov.in/img/eng_logo.png" alt="image1" style={{ width: '300px', height: '60px', padding: '10px', marginLeft: '30px'}} />
+          <img src="http://www.ud.hp.gov.in/sites/default/files/inline-images/logo1.png" alt="image2" style={{ width: '60px', height: '60px', margin: '50px 30px 20px 30px' }} />
+          <div style={{display: 'flex', flexDirection: 'column', color: '#1F4A7C', fontFamily: 'sans-serif'}}>
+          <h1 style={{fontWeight: '30px'}}>Town and Country Planning Organisation </h1>
+          <h2 style={{fontSize: '18px', margin: '-10px 0px 0px 0px ', fontWeight: 'normal'}}>Government of India</h2>
+          <h3 style={{margin: '05px 0px 0px 0px', fontSize: '18px', fontWeight: 'normal' }}>Ministry of Housing and Urban Affairs</h3>
+          </div>
         </Box>
-      <div style={{marginLeft: '400px', marginTop: '10px'}}>
-      <img src="http://www.ud.hp.gov.in/sites/default/files/inline-images/logo1.png" alt="image2" style={{ width: '50px', height: '50px', marginLeft: '20px', marginRight: '30px' }} />
+      <div style={{margin: '50px'}}>
       <img src="http://www.ud.hp.gov.in/sites/default/files/inline-images/emblem.png" alt="image3" style={{ width: '50px', height: '50px', marginLeft: '20px', marginRight: '30px' }} />
       <img src="http://www.ud.hp.gov.in/sites/default/files/inline-images/G20-theme-and-logo_1.png" alt="image4" style={{ width: '50px', height: '50px', marginLeft: '20px', marginRight: '30px' }} />
       <img src='https://www.hsvphry.org.in/assets/img/150-years-Mahatma-Gandhi-Logo.png' alt='image5' style={{width: '50px', height: '50px', marginLeft: '20px', marginRight: '30px'}}/>

@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     height: 40, 
     marginTop: '10px', 
-    backgroundColor: '#e5ffe5'
+    backgroundColor: '#f0f0f0'
     
   },
   line1: {
@@ -45,7 +45,7 @@ function NewsTicker() {
   return (
     <div className={classes.textContainer}>
       <div>
-      <Typography variant="body1" className={classes.line2} style={{padding: '10px', color: '#1A0019', fontWeight: 'bold', fontSize: '15px'}}>For any queries regarding online services, kindly contact us at :</Typography>
+      <Typography variant="body1" className={classes.line2} style={{padding: '10px', color: '#1F4A7C', fontWeight: 'bold', fontSize: '15px'}}>For any queries regarding online services, kindly contact us at :</Typography>
       </div>
     </div>
   );

@@ -12,6 +12,8 @@ import DetailTable from './Components/DetailTable';
 import Facilation from './Components/Facilation';
 import Footer from './Components/Footer';
 import FormAndCheckList from './Components/FormAndCheckList';
+import Services from './Components/Cards/Services';
+import FooterCard from './Components/Cards/FooterCards';
 
 function App() {
   return (
@@ -22,10 +24,12 @@ function App() {
       <ImageSlider images={images}/>
       <NewsTicker />
       <Card />
+      <Services />
       <DetailTable />
       <Info />
       <Facilation />
       <FormAndCheckList />
+      <FooterCard />
       <Footer />
     </React.Fragment>
   );

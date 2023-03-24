@@ -15,7 +15,7 @@ const Navbar = () => {
 //   };
 
   return (
-    <AppBar position="static" style={{backgroundColor: '#003300', height: '60px'}} >
+    <AppBar position="static" style={{backgroundColor: '#1F47AC', height: '60px'}} >
       <Toolbar>
         <Button color='inherit' style={{marginLeft: '80px', fontSize: '12px'}}>Home</Button>
         <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px'}}>About Us</Button>
@@ -23,7 +23,8 @@ const Navbar = () => {
         <Button color="inherit" onClick={handleClick} style={{marginLeft: '20px', fontSize: '12px'}}>Colonies Appartment</Button>
         <Button color='inherit' style={{marginLeft: '20px', fontSize: '12px'}}>Notifications / Orders</Button>
         <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px'}}>Media</Button>
-        <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px'}}>Act & Rules</Button>
+        {/* <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px'}}>Act & Rules</Button> */}
+        <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px'}}>RTI</Button>
         <Button color="inherit" onClick={handleClick} style={{marginLeft: '20px', fontSize: '12px'}}>Development Plan</Button>
       </Toolbar>
     </AppBar>

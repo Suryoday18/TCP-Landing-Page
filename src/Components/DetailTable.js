@@ -1,16 +1,23 @@
 import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
 import React from 'react';
+import { useState } from 'react';
+import {AiFillCaretDown} from 'react-icons/ai'
 
 
 const DetailTable = () => {
+    const [isTableVisible, setIsTableVisible] = useState(false);
+
+    const toggleTableVisibility = () => {
+         setIsTableVisible(!isTableVisible);
+    };
     return(
         <React.Fragment>
-            <Typography variant='h6' style={{marginLeft: '500px', marginTop: '20px', fontWeight: 'bold', fontSize: '30px',color: '#001A00'}}>Real Time Application Status</Typography>
+            <Typography variant='h6' style={{marginLeft: '500px', marginTop: '20px', fontWeight: 'bold', fontSize: '30px',color: '#1F4A7C'}}>Real Time Application Status</Typography>
             <Box sx={{ width: '90%', maxWidth: 1200, backgroundColor: '#FFF5FF', margin: '15px', marginLeft: '70px'}} >
             <TableContainer>
                 <Table>
                 <TableHead>
-                    <TableRow style={{background: 'linear-gradient(to right, #80FF80, #00B300)', color: 'white'}}>
+                    <TableRow style={{background: 'linear-gradient(to right, #CCCCFF, #4D4DFF)', color: 'white'}}>
                     <TableCell >Service(s)</TableCell>
                     {/* <Divider orientation="vertical"  /> */}
                     <TableCell>Time-Limit Prescribed as per PSGA</TableCell>
@@ -21,9 +28,10 @@ const DetailTable = () => {
                     <TableCell>Median Time</TableCell>
                     <TableCell>Minimum</TableCell>
                     <TableCell>Maximum</TableCell>
+                    <AiFillCaretDown style={{width: '30px', height: '30px', margin: '40px 0px 0px 20px'}} onClick={toggleTableVisibility}/>
                     </TableRow>
                 </TableHead>
-                <TableBody style={{color: '#4D004C', fontWeight: 'bold', background: 'linear-gradient(to right, #ffffff, #99FF99)'}}>
+                {isTableVisible && <TableBody style={{color: '#4D004C', fontWeight: 'bold', background: 'linear-gradient(to right, #F5F5FF, #9999FF)'}}>
                 <TableRow>
                     <TableCell>Application for Permission of Sub-division/development of Land</TableCell>
                     <TableCell>60</TableCell>
@@ -33,6 +41,7 @@ const DetailTable = () => {
                     <TableCell>88 days</TableCell>
                     <TableCell>5 days</TableCell>
                     <TableCell>181 days</TableCell>
+                    <TableCell></TableCell>
                 </TableRow>
                 <TableRow>
                     <TableCell>Application for Building Plan Permission</TableCell>
@@ -43,6 +52,7 @@ const DetailTable = () => {
                     <TableCell>181 days</TableCell>
                     <TableCell>1 days</TableCell>
                     <TableCell>363 days</TableCell>
+                    <TableCell></TableCell>
                 </TableRow>
                 <TableRow>
                     <TableCell>Application for Composition of Offences</TableCell>
@@ -53,6 +63,7 @@ const DetailTable = () => {
                     <TableCell>182 days</TableCell>
                     <TableCell>1 day</TableCell>
                     <TableCell>365</TableCell>
+                    <TableCell></TableCell>
                 </TableRow>
                 <TableRow>
                     <TableCell>Application for Real Estate Projects</TableCell>
@@ -63,6 +74,7 @@ const DetailTable = () => {
                     <TableCell>182 days</TableCell>
                     <TableCell>1 days</TableCell>
                     <TableCell>365 days</TableCell>
+                    <TableCell></TableCell>
                 </TableRow>
                 <TableRow>
                     <TableCell>Application for Change of Land Use</TableCell>
@@ -73,6 +85,7 @@ const DetailTable = () => {
                     <TableCell>88 days</TableCell>
                     <TableCell>5 days</TableCell>
                     <TableCell>181 days</TableCell>
+                    <TableCell></TableCell>
                 </TableRow>
                 <TableRow>
                     <TableCell>Application for Permission of Mobile Tower</TableCell>
@@ -83,6 +96,7 @@ const DetailTable = () => {
                     <TableCell>181 days</TableCell>
                     <TableCell>1 days</TableCell>
                     <TableCell>363 days</TableCell>
+                    <TableCell></TableCell>
                 </TableRow>
                 <TableRow>
                     <TableCell>Application of Appeal</TableCell>
@@ -93,8 +107,10 @@ const DetailTable = () => {
                     <TableCell>182 days</TableCell>
                     <TableCell>1 day</TableCell>
                     <TableCell>365</TableCell>
+                    <TableCell></TableCell>
                 </TableRow>
                 </TableBody>
+                }
                 </Table>
             </TableContainer>
             </Box>
