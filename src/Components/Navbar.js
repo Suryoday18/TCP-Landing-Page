@@ -17,15 +17,15 @@ const Navbar = () => {
   return (
     <AppBar position="static" style={{backgroundColor: '#1F47AC', height: '60px'}} >
       <Toolbar>
-        <Button color='inherit' style={{marginLeft: '80px', fontSize: '12px'}}>Home</Button>
-        <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px'}}>About Us</Button>
-        <Button color="inherit" style={{marginLeft: '20px'}}>Planning Regulations</Button>
-        <Button color="inherit" onClick={handleClick} style={{marginLeft: '20px', fontSize: '12px'}}>Colonies Appartment</Button>
-        <Button color='inherit' style={{marginLeft: '20px', fontSize: '12px'}}>Notifications / Orders</Button>
-        <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px'}}>Media</Button>
+        <Button color='inherit' style={{marginLeft: '80px', fontSize: '12px', color: 'white'}}>Home</Button>
+        <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px', color: 'white'}}>About Us</Button>
+        <Button color="inherit" style={{marginLeft: '20px', color: 'white'}}>Planning Regulations</Button>
+        <Button color="inherit" onClick={handleClick} style={{marginLeft: '20px', fontSize: '12px', color: 'white'}}>Colonies Appartment</Button>
+        <Button color='inherit' style={{marginLeft: '20px', fontSize: '12px', color: 'white'}}>Notifications / Orders</Button>
+        <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px', color: 'white'}}>Media</Button>
         {/* <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px'}}>Act & Rules</Button> */}
-        <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px'}}>RTI</Button>
-        <Button color="inherit" onClick={handleClick} style={{marginLeft: '20px', fontSize: '12px'}}>Development Plan</Button>
+        <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px', color: 'white'}}>RTI</Button>
+        <Button color="inherit" onClick={handleClick} style={{marginLeft: '20px', fontSize: '12px', color: 'white'}}>Development Plan</Button>
       </Toolbar>
     </AppBar>
   );

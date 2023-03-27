@@ -14,6 +14,7 @@ import Footer from './Components/Footer';
 import FormAndCheckList from './Components/FormAndCheckList';
 import Services from './Components/Cards/Services';
 import FooterCard from './Components/Cards/FooterCards';
+import MapFooter from './Components/MapFooter';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Facilation />
       <FormAndCheckList />
       <FooterCard />
+      <MapFooter />
       <Footer />
     </React.Fragment>
   );

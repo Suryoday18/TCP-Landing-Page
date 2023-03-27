@@ -87,7 +87,7 @@ const Facilation = () => {
 
   return (
     <div style={{background: 'linear-gradient(to right, #FFFFFF, #9999FF)', margin: '20px'}}>
-      <Typography variant="h4" component="h1" className={classes.heading} style={{marginLeft: '500px', color: '#000066', fontWeight: 'bold', fontStyle: 'italic', textDecoration: 'underline'}}>
+      <Typography variant="h4" component="h1" className={classes.heading} style={{marginLeft: '500px', color: '#330031', fontWeight: 'bold', fontStyle: 'italic', textDecoration: 'underline'}}>
         Citizen Facilitation
       </Typography>
       <Grid container justifyContent="center">
@@ -95,7 +95,7 @@ const Facilation = () => {
           <Grid item xs={12} sm={6} md={2} key={card.title}>
             <Card className={classes.card} style={{background: 'linear-gradient(to bottom, #FFFFFF, #CCCCFF)'}}>
             <CardContent className={classes.transparentCard}>
-                <Typography gutterBottom variant="p" component="p" style={{fontSize: '14px', margin: '12px', color: '#1A4A7C',fontWeight: 'bold',}}>
+                <Typography gutterBottom variant="p" component="p" style={{fontSize: '14px', margin: '12px', color: '#330032',fontWeight: 'bold',}}>
                   {card.title}
                 </Typography>
               </CardContent>

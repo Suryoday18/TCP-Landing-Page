@@ -1,6 +1,8 @@
 import { Grid, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 import AuthDetails from './AuthDetails'
 import ImportantLinks from './ImportantLink'
+import { makeStyles } from '@mui/styles';
+
 
 
 // const cards = [
@@ -37,10 +39,34 @@ import ImportantLinks from './ImportantLink'
 //       para: 'Harmonized Guidelines and Space Standards for barrier Free Built Environment for Persons with Disability and Elderly Persons.'
 //     },
 //   ];
+const useStyles = makeStyles({
+  button: 
+  {
+    padding: '5px',
+    borderRadius: '10px',
+    fontSize: '12px',
+    backgroundColor: '#4ca9d9',
+    background: 'linear-gradient(to right,  #F5F5FF, #CCCCFF)',
+    transition: 'background-color: .5s ease',
+    width: '150px',
+    height: '40px',
+    marginRight: '10px',
+  },
+  headings: {
+    fontFamily: 'sans-serif',
+    color: '#1F4A7C',
+    fontSize: '20px',
+    fontWeight: 'bold'
+  },
+  paraGraph: {
+    // padding: '5px 0px 5px 0px'
+  }
+})
 const FooterCard = () => {
+  const classes = useStyles()
 
   return (
-    <Card style={{backgroundColor: '#1F4A7C', boxShadow: 'rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;'}}>
+    <Card style={{backgroundColor: '#1F4A7C', boxShadow: 'rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;'}}>
       <CardContent>
       {/* {cards.map((card) => (
           <Grid item xs={12} sm={6} md={3} key={card.title} display='flex' flexDirection='row' justifyContent='space-around'>
@@ -68,13 +94,13 @@ const FooterCard = () => {
                 image="http://www.tcpo.gov.in/sites/default/files/Amrut.png"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" className={classes.headings}>
                 AMRUT-Reforms
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" className={classes.paraGraph}>
                 Atal Mission for Rejuvenation and Urban Transformation (AMRUT) Reforms to improve service delivery system mobilize resources and make municipal functioning more transparent and accountable
                 </Typography>
-                <Button>Read More +</Button>
+                <Button className={classes.button}>Read More +</Button>
               </CardContent>
             </Card>
           </Grid>
@@ -86,13 +112,13 @@ const FooterCard = () => {
                 image="http://www.tcpo.gov.in/sites/default/files/AmrutSubscheme.png"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" className={classes.headings}>
                 AMRUT Sub-Scheme
                 </Typography>
-                <Typography variant="body2" color="text.secondary" style={{padding: '10px'}}>
+                <Typography variant="body2" color="text.secondary" className={classes.paraGraph} style={{padding: '10px'}}>
                 Formulation of GIS-Based Master Plans for AMRUT Cities is one of the important reforms under Atal Mission for Rejuvenation and Urban Transformation.
                 </Typography>
-                <Button>Read More +</Button>
+                <Button className={classes.button}>Read More +</Button>
               </CardContent>
             </Card>
           </Grid>
@@ -104,13 +130,13 @@ const FooterCard = () => {
                 image="http://tcpo.gov.in/sites/default/files/LAP.png"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" className={classes.headings}>
                     Local Area Plan
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" className={classes.paraGraph}>
                 This is a pilot to support the preparation of Local Area Plan (LAP)and Town Planning Schemes (TPS) in the States/Cities and build local capacity for undertaking such tasks.
                 </Typography>
-                <Button>Read More +</Button>
+                <Button className={classes.button}>Read More +</Button>
               </CardContent>
           </Card>
           </Grid>
@@ -122,13 +148,13 @@ const FooterCard = () => {
                 image="http://www.tcpo.gov.in/sites/default/files/URDPFI.png"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" className={classes.headings}>
                   URDPFI
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" className={classes.paraGraph}>
                 Urban and Regional Development Plan formulation and Implementation – 2014 is modified and upgraded version UDPFI Guidelines-1996 for framework for Urban Development and Plan formulation.
                 </Typography>
-                <Button>Read More +</Button>
+                <Button className={classes.button}>Read More +</Button>
               </CardContent>
             </Card>
           </Grid>
@@ -140,13 +166,13 @@ const FooterCard = () => {
                 image="http://www.tcpo.gov.in/sites/default/files/MBBL.png"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" className={classes.headings}>
                   MBBL
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" className={classes.paraGraph}>
                 Building Bye-Laws are legal tools used to regulate coverage, height, building bulk, and architectural design and construction aspects of buildings so as to achieve orderly development of an area.
                 </Typography>
-                <Button>Read More+</Button>
+                <Button className={classes.button}>Read More+</Button>
               </CardContent>
             </Card>
           </Grid>
@@ -158,21 +184,21 @@ const FooterCard = () => {
                 image="http://tcpo.gov.in/sites/default/files/GUIDELINES.png"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" className={classes.headings}>
                 Harmonized Guidelines
                 </Typography>
-                <Typography variant="body2" color="text.secondary" style={{padding: '10px'}}>
+                <Typography variant="body2" color="text.secondary" className={classes.paraGraph} style={{padding: '10px'}}>
                 Harmonized Guidelines and Space Standards for barrier Free Built Environment for Persons with Disability and Elderly Persons.
                 </Typography>
-                <Button>Read More +</Button>
+                <Button className={classes.button}>Read More +</Button>
               </CardContent>
           </Card>
           </Grid>
         </Grid>
         </CardContent>
        <div style={{display: 'flex', flexDirection: 'row'}}>
-            <div style={{width: '900px'}}><AuthDetails /></div>
-            <div style={{width: '600px'}}><ImportantLinks /></div>
+            <div style={{width: '900px',marginLeft: '100px'}}><AuthDetails /></div>
+            <div style={{width: '600px', marginRight: '100px'}}><ImportantLinks /></div>
        </div>
     </Card>
   )

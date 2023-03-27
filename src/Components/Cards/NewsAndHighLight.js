@@ -1,4 +1,5 @@
 import {  Card, CardContent, makeStyles, Typography } from '@material-ui/core';
+import {FaAngleDoubleRight} from 'react-icons/fa'
 
 
 const useStyles = makeStyles({
@@ -28,28 +29,45 @@ const NewsAndHighlights = () => {
             News and HighLights
         </Typography>
         <div style={{margin: '15px'}}>
+          <FaAngleDoubleRight color='#1F4A7C' />
         <a variant="body1" href='/' component="p" className={classes.button} style={{fontSize: '14px'}}>
             Public Notice on Revision of Recruitment Rules for the post of Planning Assistant (re-designated as Planning Officer) in TCPO
         </a>
         </div>
         <div style={{margin: '15px'}}>
+        <FaAngleDoubleRight color='#1F4A7C' />
         <a variant="body1" href='/' component="p" style={{ padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '20px'}}>
          Azadi ka Amrut Mahotsav
         </a>
         </div>
         <div style={{margin: '15px'}}>
+        <FaAngleDoubleRight color='#1F4A7C' />
         <a variant="body1" href='/' component="p" style={{ padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '20px'}}>
             Public Procurement (Preference to Make in India) (PPP-MIII) Order 2017
         </a>
         </div>
         <div style={{margin: '15px'}}>
+        <FaAngleDoubleRight color='#1F4A7C' />
         <a variant="body1"  href='/' component="p" style={{ padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '20px'}}>
             Nodal Officer for Public grievances pertaining to COVID-19
         </a>
         </div>
         <div style={{margin: '15px'}}>
+        <FaAngleDoubleRight color='#1F4A7C' />
         <a variant="body1" href='/' component="p" style={{ padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '20px'}}>
          Training Report on Vetting under AMRUT GIS Sub Scheme at Tamilnadu
+        </a>
+        </div>
+        <div style={{margin: '15px'}}>
+        <FaAngleDoubleRight color='#1F4A7C' />
+        <a variant="body1" href='/' component="p" style={{ padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '20px'}}>
+            Public Procurement (Preference to Make in India) (PPP-MIII) Order 2017
+        </a>
+        </div>
+        <div style={{margin: '15px'}}>
+        <FaAngleDoubleRight color='#1F4A7C'/>
+        <a variant="body1"  href='/' component="p" style={{ padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '20px'}}>
+            Nodal Officer for Public grievances pertaining to COVID-19
         </a>
         </div>
       </CardContent>
