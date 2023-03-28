@@ -14,7 +14,7 @@ const FormAndCheckList = () => {
           </Paper>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Paper style={{ height: '100%', padding: '16px', background: 'linear-gradient(to bottom, #B3B3FF, #4D4DFF)'}}>
+          <Paper style={{ height: '100%', padding: '16px', backgroundColor: '#1F4A7C'}}>
             <UserForm />
           </Paper>
         </Grid>

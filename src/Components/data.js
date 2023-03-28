@@ -1,6 +1,11 @@
 const images = [
-    'https://tcp.hp.gov.in/Application/uploadDocuments/banner/Banner20171004_160224.jpg',
-    'https://tcp.hp.gov.in/Application/uploadDocuments/banner/Banner20190627_162504.jpg',
+    'http://www.tcpo.gov.in/sites/default/files/styles/…anner/public/newfile/bannertcpo.jpg?itok=kSK6QKSP',
+    'http://www.tcpo.gov.in/sites/default/files/styles/…/newfile/akam-home-banner-eng_1.jpg?itok=qGEHuYkt',
+    'http://www.tcpo.gov.in/sites/default/files/styles/mainbanner/public/newfile/1-052.jpg?itok=00oNI9R5',
+    'http://www.tcpo.gov.in/sites/default/files/styles/…nbanner/public/newfile/banner_1.jpg?itok=b501AfmH',
+    'http://www.tcpo.gov.in/sites/default/files/styles/mainbanner/public/newfile/banner.jpg?itok=XcPHhWGL',
+    'http://www.tcpo.gov.in/sites/default/files/styles/…nbanner/public/newfile/banner-6.jpg?itok=VuX4VPSd'
+    
   ];
 
 export default images

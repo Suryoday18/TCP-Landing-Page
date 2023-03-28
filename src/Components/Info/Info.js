@@ -6,7 +6,7 @@ import Notification from './Notification';
 
 const Info = () => {
   return (
-    <Box sx={{ height: 350, display: 'flex', margin: '20px', alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row', background: 'linear-gradient(to right, #F5F5FF, #B3B3FF)', marginTop: '50px' }}>
+    <Box sx={{ height: 350, display: 'flex', margin: '20px', alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row', backgroundColor: '#1F4A7C', marginTop: '50px' }}>
         <Notification />
         <Development />
     </Box>

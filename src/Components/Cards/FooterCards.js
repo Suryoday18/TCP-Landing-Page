@@ -1,4 +1,4 @@
-import { Grid, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { Card, CardContent } from '@mui/material';
 import AuthDetails from './AuthDetails'
 import ImportantLinks from './ImportantLink'
 import { makeStyles } from '@mui/styles';
@@ -67,24 +67,8 @@ const FooterCard = () => {
 
   return (
     <Card style={{backgroundColor: '#1F4A7C', boxShadow: 'rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;'}}>
-      <CardContent>
-      {/* {cards.map((card) => (
-          <Grid item xs={12} sm={6} md={3} key={card.title} display='flex' flexDirection='row' justifyContent='space-around'>
-            <Card style={{backgroundColor: '#1F4A7C'}}>
-            <CardContent >
-                <Typography gutterBottom variant="p" component="p" style={{fontSize: '13px', margin: '12px', color: 'white',fontWeight: 'bold'}}>
-                  {card.title}
-                </Typography>
-              </CardContent>
-              <CardMedia
-                component='img'
-                image={card.logo}
-                title={card.title}
-                style={{height: '240px'}}
-              />
-            </Card>
-          </Grid>
-        ))} */}
+      {/* <CardContent>
+      
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={4}>
             <Card style={{width: '400px', height: '400px'}}>
@@ -195,11 +179,13 @@ const FooterCard = () => {
           </Card>
           </Grid>
         </Grid>
-        </CardContent>
+      </CardContent> */}
+      <CardContent>
        <div style={{display: 'flex', flexDirection: 'row'}}>
             <div style={{width: '900px',marginLeft: '100px'}}><AuthDetails /></div>
             <div style={{width: '600px', marginRight: '100px'}}><ImportantLinks /></div>
        </div>
+       </CardContent>
     </Card>
   )
   

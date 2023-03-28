@@ -17,7 +17,7 @@ const DetailTable = () => {
             <TableContainer>
                 <Table>
                 <TableHead>
-                    <TableRow style={{background: 'linear-gradient(to right, #CCCCFF, #4D4DFF)', color: 'white'}}>
+                    <TableRow style={{background: 'linear-gradient(to right, #CCCCFF, #1F4A7C)', color: 'white'}}>
                     <TableCell >Service(s)</TableCell>
                     {/* <Divider orientation="vertical"  /> */}
                     <TableCell>Time-Limit Prescribed as per PSGA</TableCell>

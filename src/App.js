@@ -15,10 +15,31 @@ import FormAndCheckList from './Components/FormAndCheckList';
 import Services from './Components/Cards/Services';
 import FooterCard from './Components/Cards/FooterCards';
 import MapFooter from './Components/MapFooter';
+// import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+// import CssBaseline from '@material-ui/core/CssBaseline';
+// import Roboto from '@fontsource/roboto';
+
+
+
+// const theme = createMuiTheme({
+//   typography: {
+//     fontFamily: ['Open Sans', 'sans-serif'].join(','),
+//   },
+//   overrides: {
+//     MuiCssBaseline: {
+//       '@global': {
+//         '@font-face': [Roboto],
+//       },
+//     },
+//   },
+// });
+
 
 function App() {
   return (
     <React.Fragment>
+      {/* <ThemeProvider theme={theme}> 
+      <CssBaseline /> */}
       <Strip />
       <GovtStrip />
       <Navbar />
@@ -33,6 +54,7 @@ function App() {
       <FooterCard />
       <MapFooter />
       <Footer />
+    {/* </ThemeProvider>  */}
     </React.Fragment>
   );
 }
