@@ -17,21 +17,21 @@ const DetailTable = () => {
             <TableContainer>
                 <Table>
                 <TableHead>
-                    <TableRow style={{background: 'linear-gradient(to right, #CCCCFF, #1F4A7C)', color: 'white'}}>
-                    <TableCell >Service(s)</TableCell>
+                    <TableRow style={{backgroundColor: '#1F4A7C', color: '#FFFFFF'}}>
+                    <TableCell style={{color: 'white'}}>Service(s)</TableCell>
                     {/* <Divider orientation="vertical"  /> */}
-                    <TableCell>Time-Limit Prescribed as per PSGA</TableCell>
+                    <TableCell style={{color: 'white'}}>Time-Limit Prescribed as per PSGA</TableCell>
                     {/* <Divider orientation="vertical" flexItem /> */}
-                    <TableCell>Total No. of Application Received</TableCell>
-                    <TableCell>Total No. of Application Approved</TableCell>
-                    <TableCell>Avg. Time</TableCell>
-                    <TableCell>Median Time</TableCell>
-                    <TableCell>Minimum</TableCell>
-                    <TableCell>Maximum</TableCell>
+                    <TableCell style={{color: 'white'}}>Total No. of Application Received</TableCell>
+                    <TableCell style={{color: 'white'}}>Total No. of Application Approved</TableCell>
+                    <TableCell style={{color: 'white'}}>Avg. Time</TableCell>
+                    <TableCell style={{color: 'white'}}>Median Time</TableCell>
+                    <TableCell style={{color: 'white'}}>Minimum</TableCell>
+                    <TableCell style={{color: 'white'}}>Maximum</TableCell>
                     <AiFillCaretDown style={{width: '30px', height: '30px', margin: '40px 0px 0px 20px'}} onClick={toggleTableVisibility}/>
                     </TableRow>
                 </TableHead>
-                {isTableVisible && <TableBody style={{color: '#4D004C', fontWeight: 'bold', background: 'linear-gradient(to right, #F5F5FF, #9999FF)'}}>
+                {isTableVisible && <TableBody style={{color: '#4D004C', fontWeight: 'bold', background: 'linear-gradient(to right, #F5F5FF, #E5E5FF)'}}>
                 <TableRow>
                     <TableCell>Application for Permission of Sub-division/development of Land</TableCell>
                     <TableCell>60</TableCell>

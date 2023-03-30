@@ -27,7 +27,7 @@ const items = [
 const AuthDetails = () => {
   return (
     <div>
-    <Card style={{maxWidth: 500, height: '650px', margin: '10px', background: 'linear-gradient(to right,  #F5FFF5, #B3B3FF)', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset'}}>
+    <Card style={{maxWidth: 500, height: '400px', margin: '20px', background: 'linear-gradient(to right,  #F5FFF5, #B3B3FF)', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset'}}>
       <CardContent>
         <Grid container spacing={2} style={{ display: 'flex', flexDirection: 'column'}}>
           {items.map((item, index) => (

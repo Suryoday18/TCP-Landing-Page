@@ -12,9 +12,11 @@ import DetailTable from './Components/DetailTable';
 import Facilation from './Components/Facilation';
 import Footer from './Components/Footer';
 import FormAndCheckList from './Components/FormAndCheckList';
-import Services from './Components/Cards/Services';
-import FooterCard from './Components/Cards/FooterCards';
+// import Services from './Components/Cards/Services';
+import AuthAndServices from './Components/Cards/AuthAndServices';
+// import FooterCard from './Components/Cards/FooterCards';
 import MapFooter from './Components/MapFooter';
+import LinksSlideshow from './Components/Cards/ImportantLinks'
 // import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 // import CssBaseline from '@material-ui/core/CssBaseline';
 // import Roboto from '@fontsource/roboto';
@@ -46,12 +48,13 @@ function App() {
       <ImageSlider images={images}/>
       <NewsTicker />
       <Card />
-      <Services />
+     <AuthAndServices />
       <DetailTable />
       <Info />
       <Facilation />
       <FormAndCheckList />
-      <FooterCard />
+      <LinksSlideshow />
+      {/* <FooterCard /> */}
       <MapFooter />
       <Footer />
     {/* </ThemeProvider>  */}
