@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@mui/styles';
-import { Grid, Card, CardContent, Typography } from '@mui/material';
+import { Grid, Card, CardContent, Typography, Button } from '@mui/material';
 // import {BiBuildingHouse} from 'react-icons/bi'
 // import {GoFileDirectory} from 'react-icons/go'
 // import {FaWpforms} from 'react-icons/fa'
@@ -18,6 +18,8 @@ import Application from './Icons-Images/application.png'
 import Instruction from './Icons-Images/instructions.png'
 import Location from './Icons-Images/location.png'
 import Complain from './Icons-Images/complain.png'
+import {AiOutlineDoubleRight} from 'react-icons/ai'
+import { AiOutlineDoubleLeft } from 'react-icons/ai';
 
 
 
@@ -34,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     width: '160px',
-    margin: '20px', 
+    margin: '10px',
     height: '200px'
 
   },
@@ -94,14 +96,29 @@ const cards = [
 
 const Facilation = () => {
   const classes = useStyles();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNextClick = () => {
+    if (currentIndex < cards.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+  const handlePrevClick = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  const visibleCards = cards.slice(currentIndex, currentIndex + 5).length < 6 ? cards.slice(currentIndex, currentIndex + 5) : cards.slice(currentIndex + 5)
 
   return (
-    <div style={{margin: '20px'}}>
-      <Typography variant="h4" component="h1" className={classes.heading} style={{marginLeft: '500px', color: '#330031', fontWeight: 'bold', fontStyle: 'italic', textDecoration: 'underline'}}>
+    <div style={{}}>
+      <Button onClick={handlePrevClick} style={{transform: 'translateY(180px)'}}><AiOutlineDoubleLeft style={{width: '30px', height: '30px', color: '#FFFFFF', padding: '10px',borderRadius: '50%', backgroundColor: '#1F4A7C'}} /></Button>
+      <Typography variant="h4" component="h1" className={classes.heading} style={{display:'flex', justifyContent: 'center', color: '#1F4A7C', fontWeight: 'bold', fontStyle: 'italic'}}>
         Citizen Facilitation
       </Typography>
       <Grid container justifyContent="center">
-        {cards.map((card) => (
+        {visibleCards.map((card) => (
           <Grid item xs={12} sm={6} md={2} key={card.title}>
             <Card className={classes.card} style={{background: 'linear-gradient(to bottom, #FFFFFF, #CCCCFF)'}}>
             <CardContent className={classes.transparentCard}>
@@ -122,6 +139,7 @@ const Facilation = () => {
           </Grid>
         ))}
       </Grid>
+      <Button onClick={handleNextClick} style={{transform: 'translateX(1150px) translateY(-150px)'}}><AiOutlineDoubleRight style={{width: '30px', height: '30px', color: '#FFFFFF',padding: '10px',borderRadius: '50%', backgroundColor: '#1F4A7C'}} /></Button>
     </div>
   );
 };

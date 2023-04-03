@@ -211,7 +211,7 @@ const UserForm = () => {
             style: { color: 'white' }
           }} 
       />
-      <Button style={{color: 'white', display: 'block', width: '100px', padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '10px', background: 'linear-gradient(to right, #0000FF, #000033)' }}>Submit</Button>
+      <Button style={{color: 'white', display: 'block', width: '100px', padding: '10px', borderRadius: '10px', fontSize: '14px', marginTop: '20px', background: 'linear-gradient(to right, #8080FF, #4D4DFF)' }}>Submit</Button>
     </div>
   );
 };

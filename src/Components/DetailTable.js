@@ -12,8 +12,10 @@ const DetailTable = () => {
     };
     return(
         <React.Fragment>
-            <Typography variant='h6' style={{marginLeft: '500px', marginTop: '20px', fontWeight: 'bold', fontSize: '30px',color: '#1F4A7C'}}>Real Time Application Status</Typography>
-            <Box sx={{ width: '90%', maxWidth: 1200, backgroundColor: '#FFF5FF', margin: '15px', marginLeft: '70px'}} >
+            <Typography variant='h6' style={{marginLeft: '500px', marginTop: '20px', fontWeight: 'bold', fontSize: '30px',color: '#1F4A7C'}}>
+                Real Time Application Status
+            </Typography>
+            <Box sx={{ width: '90%', maxWidth: 1200, margin: '10px', marginLeft: '70px'}} >
             <TableContainer>
                 <Table>
                 <TableHead>
@@ -31,7 +33,8 @@ const DetailTable = () => {
                     <AiFillCaretDown style={{width: '30px', height: '30px', margin: '40px 0px 0px 20px'}} onClick={toggleTableVisibility}/>
                     </TableRow>
                 </TableHead>
-                {isTableVisible && <TableBody style={{color: '#4D004C', fontWeight: 'bold', background: 'linear-gradient(to right, #F5F5FF, #E5E5FF)'}}>
+                {isTableVisible && 
+                <TableBody style={{color: '#4D004C', fontWeight: 'bold', background: 'linear-gradient(to right, #F5F5FF, #E5E5FF)'}}>
                 <TableRow>
                     <TableCell>Application for Permission of Sub-division/development of Land</TableCell>
                     <TableCell>60</TableCell>
@@ -85,28 +88,6 @@ const DetailTable = () => {
                     <TableCell>88 days</TableCell>
                     <TableCell>5 days</TableCell>
                     <TableCell>181 days</TableCell>
-                    <TableCell></TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell>Application for Permission of Mobile Tower</TableCell>
-                    <TableCell>60</TableCell>
-                    <TableCell>13787</TableCell>
-                    <TableCell>9502</TableCell>
-                    <TableCell>57 days</TableCell>
-                    <TableCell>181 days</TableCell>
-                    <TableCell>1 days</TableCell>
-                    <TableCell>363 days</TableCell>
-                    <TableCell></TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell>Application of Appeal</TableCell>
-                    <TableCell>7 </TableCell>
-                    <TableCell>352</TableCell>
-                    <TableCell>1548</TableCell>
-                    <TableCell>98 days</TableCell>
-                    <TableCell>182 days</TableCell>
-                    <TableCell>1 day</TableCell>
-                    <TableCell>365</TableCell>
                     <TableCell></TableCell>
                 </TableRow>
                 </TableBody>

@@ -7,8 +7,8 @@ import Strip from './Components/Strip';
 import images from './Components/data';
 import NewsTicker from './Components/NewsTicker';
 import Card from './Components/Cards/Card';
-import Info from './Components/Info/Info';
-import DetailTable from './Components/DetailTable';
+// import Info from './Components/Info/Info';
+// import DetailTable from './Components/DetailTable';
 import Facilation from './Components/Facilation';
 import Footer from './Components/Footer';
 import FormAndCheckList from './Components/FormAndCheckList';
@@ -17,6 +17,8 @@ import AuthAndServices from './Components/Cards/AuthAndServices';
 // import FooterCard from './Components/Cards/FooterCards';
 import MapFooter from './Components/MapFooter';
 import LinksSlideshow from './Components/Cards/ImportantLinks'
+import CustomizedTables from './RealTable';
+// import StickingwithScroll from './Components/StickingwithScroll';
 // import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 // import CssBaseline from '@material-ui/core/CssBaseline';
 // import Roboto from '@fontsource/roboto';
@@ -49,8 +51,10 @@ function App() {
       <NewsTicker />
       <Card />
      <AuthAndServices />
-      <DetailTable />
-      <Info />
+     {/* <StickingwithScroll /> */}
+      {/* <DetailTable /> */}
+      <CustomizedTables />
+      {/* <Info /> */}
       <Facilation />
       <FormAndCheckList />
       <LinksSlideshow />
