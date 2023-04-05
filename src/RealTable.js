@@ -45,9 +45,9 @@ export default function CustomizedTables() {
   return (
     <TableContainer component={Paper} sx={{width: '90%', margin: '20px 10px 0px 70px'}}>
         <Typography variant='h6' style={{display: 'flex', justifyContent: 'center', height:'50px',  fontWeight: 'bold', fontSize: '30px',color: '#1F4A7C', backgroundImage: 'linear-gradient(to right, #F5F5FF, #E5E5FF)'}}>
-                Real Time Application Status
+                Real Time Application Status 
         </Typography>
-      <Table sx={{minWidth: 700 }} aria-label="customized table">
+      <Table sx={{minWidth: 1200 }} aria-label="customized table">
         <TableHead>
           <TableRow style={{background: '#1F4A7C'}}>
             <StyledTableCell>Time-Limit Prescribed as per PSGA</StyledTableCell>

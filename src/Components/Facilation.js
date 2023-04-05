@@ -35,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: '100px'
   },
   card: {
-    width: '160px',
+    width: '180px',
     margin: '10px',
-    height: '200px'
+    height: '220px'
 
   },
   media: {
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
 const cards = [
   {
     title: 'Notified Planning/Special Area',
-    logo: <img src={Skywrapper} alt='image1' style={{width: '100px', height: '100px'}}/>
+    logo: <img src={Skywrapper} alt='image1' style={{width: '100px', height: '100px', marginTop: '20px'}}/>
   },
   // {
   //   title: 'RTI',
@@ -61,36 +61,36 @@ const cards = [
   // },
   {
     title: 'Directory of Reg. Professionals',
-    logo: <img src={Case} alt='image2' style={{width: '100px', height: '100px'}}/>
+    logo: <img src={Case} alt='image2' style={{width: '100px', height: '100px', marginTop: '20px'}}/>
   },
   {
     title: 'Download Form',
-    logo: <img src={Task} alt='image3' style={{width: '100px', height: '100px'}}/>
+    logo: <img src={Task} alt='image3' style={{width: '100px', height: '100px', marginTop: '20px'}}/>
 
   },
   {
     title: 'Public Service Guarantee ACT',
-    logo: <img src={Resource} alt='image4' style={{width: '100px', height: '100px'}}/>
+    logo: <img src={Resource} alt='image4' style={{width: '100px', height: '100px', marginTop: '20px'}}/>
   },
   {
     title: 'License and Essentiality Certifiate',
-    logo: <img src={Certi} alt='image5' style={{width: '100px', height: '100px'}}/>
+    logo: <img src={Certi} alt='image5' style={{width: '100px', height: '100px', marginTop: '20px'}}/>
   },
   {
     title: 'Planing Permission Cases',
-    logo: <img src={Application} alt='image6' style={{width: '100px', height: '100px'}}/>
+    logo: <img src={Application} alt='image6' style={{width: '100px', height: '100px', marginTop: '20px'}}/>
   },
   {
     title: 'Instructions/Orders',
-    logo: <img src={Instruction} alt='image7' style={{width: '100px', height: '100px'}}/>
+    logo: <img src={Instruction} alt='image7' style={{width: '100px', height: '100px', marginTop: '20px'}}/>
   },
   {
     title: 'Area Locator',
-    logo: <img src={Location} alt='image8' style={{width: '100px', height: '100px'}}/>
+    logo: <img src={Location} alt='image8' style={{width: '100px', height: '100px', marginTop: '20px'}}/>
   },
   {
     title: 'Unauthorised constructions complainants',
-    logo: <img src={Complain} alt='image9' style={{width: '100px', height: '100px'}}/>
+    logo: <img src={Complain} alt='image9' style={{width: '100px', height: '100px', marginTop: '20px'}}/>
   },
 ];
 
@@ -114,7 +114,7 @@ const Facilation = () => {
   return (
     <div style={{}}>
       <Button onClick={handlePrevClick} style={{transform: 'translateY(180px)'}}><AiOutlineDoubleLeft style={{width: '30px', height: '30px', color: '#FFFFFF', padding: '10px',borderRadius: '50%', backgroundColor: '#1F4A7C'}} /></Button>
-      <Typography variant="h4" component="h1" className={classes.heading} style={{display:'flex', justifyContent: 'center', color: '#1F4A7C', fontWeight: 'bold', fontStyle: 'italic'}}>
+      <Typography variant="h4" component="h1" className={classes.heading} style={{display:'flex', justifyContent: 'center', color: '#1F4A7C', fontWeight: 'bold'}}>
         Citizen Facilitation
       </Typography>
       <Grid container justifyContent="center">
@@ -122,7 +122,7 @@ const Facilation = () => {
           <Grid item xs={12} sm={6} md={2} key={card.title}>
             <Card className={classes.card} style={{background: 'linear-gradient(to bottom, #FFFFFF, #CCCCFF)'}}>
             <CardContent className={classes.transparentCard}>
-                <Typography gutterBottom variant="p" component="p" style={{fontSize: '14px', margin: '12px', color: '#330032',fontWeight: 'bold',}}>
+                <Typography gutterBottom variant="p" component="p" style={{fontSize: '12px', color: '#330032',fontWeight: 'bold'}}>
                   {card.title}
                 </Typography>
               </CardContent>

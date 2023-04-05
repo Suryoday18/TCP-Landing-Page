@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     //   flexGrow: 1,
     //   overflow: 'auto'
     // },
-    background: 'linear-gradient(to right, #F5F5FF, #9999FF)',
+    background: 'linear-gradient(to right, #F5F5FF, #B3B3FF)',
   },
   list: {
     paddingTop: 0,
@@ -43,7 +43,7 @@ const Notification = () => {
         </div>
         <List className={classes.list}>
           <ListItem>
-          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20201210_132526.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '15px', color: 'black', fontWeight: 'bold'}} class="screenReader" title="Circular Mandating Online Submission Of Applications" tabindex="91">Circular Mandating Online Submission Of ...</a>
+          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20201210_132526.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '15px', color: '#1F4A7C', fontWeight: 'bold'}} class="screenReader" title="Circular Mandating Online Submission Of Applications" tabindex="91">Circular Mandating Online Submission Of ...</a>
           </ListItem>
           <Divider />
           <ListItem>

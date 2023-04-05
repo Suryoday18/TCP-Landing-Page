@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     //   flexGrow: 1,
     //   overflow: 'auto'
     // },
-     background: 'linear-gradient(to right, #F5F5FF, #9999FF)',
+     background: 'linear-gradient(to right, #F5F5FF, #B3B3FF)',
   },
   heading: {
     padding: '10px',

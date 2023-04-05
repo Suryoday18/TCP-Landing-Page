@@ -17,7 +17,7 @@ import AuthAndServices from './Components/Cards/AuthAndServices';
 // import FooterCard from './Components/Cards/FooterCards';
 import MapFooter from './Components/MapFooter';
 import LinksSlideshow from './Components/Cards/ImportantLinks'
-import CustomizedTables from './RealTable';
+// import CustomizedTables from './RealTable';
 // import StickingwithScroll from './Components/StickingwithScroll';
 // import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 // import CssBaseline from '@material-ui/core/CssBaseline';
@@ -53,7 +53,7 @@ function App() {
      <AuthAndServices />
      {/* <StickingwithScroll /> */}
       {/* <DetailTable /> */}
-      <CustomizedTables />
+      {/* <CustomizedTables /> */}
       {/* <Info /> */}
       <Facilation />
       <FormAndCheckList />

@@ -1,9 +1,19 @@
 import React, { useState, useEffect } from 'react';
-// import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
+import CustomizedTables from '../RealTable';
+import { Modal } from '@mui/material';
+
 
 
 const ImageSlider = ({ images }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [open, setOpen] = useState(false)
+    const handleClickOpen = () => {
+        setOpen(true);
+      };
+    
+      const handleClose = () => {
+        setOpen(false);
+      };
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -17,7 +27,13 @@ const ImageSlider = ({ images }) => {
         <div className="slideshow" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             {/* <button className="slideshow-button" onClick={handlePreviousClick}><FiChevronLeft /></button> */}
             <img src={images[currentImageIndex]} alt="Slideshow" style={{maxWidth: '100%', height: 'auto'}}/>
-            {/* <button className="slideshow-button" onClick={handleNextClick}><FiChevronRight /></button> */}
+            <div onClick={handleClickOpen} style={{position: 'fixed', width: '50px',top: '270px', right: '0px', color: 'white', height: '250px', zIndex: '99999', borderTop: '30px solid transparent', borderBottom: '30px solid transparent', borderRight: '35px solid #1F4A7C', cursor: 'pointer'}}>
+            <span style={{position: 'fixed', top: '390px', width: '220px', height: '50px', right: '-110px', rotate: '270deg', cursor: 'pointer'}}>Real Time Application status</span>
+            </div>
+
+            <Modal open={open} onClose={handleClose} closeAfterTransition>
+             <CustomizedTables />
+             </Modal>
         </div>
     );
 };
