@@ -3,7 +3,7 @@ import { Card, CardContent, CardMedia, Grid, Typography } from '@material-ui/cor
 
 const items = [
   {
-    image: "http://www.ud.hp.gov.in/sites/default/files/inline-images/CM_1.png",
+    image: "https://tcp.hp.gov.in/Application/uploadDocuments/offProfile/OffProfile20230215_151521.jpeg",
     text1: "Shri Sukhvinder Singh",
     text2: "Hon'ble Chief Minister",
   },
@@ -36,9 +36,9 @@ const AuthDetails = () => {
                 component="img"
                 image={item.image}
                 title={`Item ${index + 1}`}
-                style={{borderRadius: '50%', width: '52px'}}
+                style={{width: '52px'}}
               />
-              <div style={{ margin: '10px' }}>
+              <div style={{ margin: '10px 10px 10px 25px' }}>
               <Typography variant="body1" style={{ color: '#001A00', fontWeight: 'bold', fontSize: '15px', width: '300px', marginTop: '10px', WebkitFontSmoothing: 'antialiased', MozOsxFontSmoothing: 'grayscale' }}>{item.text1}</Typography>
               <Typography variant="body2" style={{color: '#001A00', width: '300px', fontSize: '12px'}}>{item.text2}</Typography>
               </div>

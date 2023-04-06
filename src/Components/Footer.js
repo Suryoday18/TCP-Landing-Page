@@ -2,26 +2,21 @@ import { Box, Typography } from '@mui/material';
 
 const Footer = () => {
   return (
-    <Box sx={{ height: 300, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', bgcolor: '#0e2948', color: 'white' }}>
+    <Box sx={{ height: 200, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', bgcolor: '#0e2948', color: 'white' }}>
+        <div style={{display: 'flex', flexDirection: 'row'}}>
         <Typography variant='body1' style={{margin: '20px'}}> 
-          Accessbility Statement | Copyright Policy | Disclaimer | Site Map | Feedback | HyperLink Policy | Privacy Policy | Terms & Conditions | Terms & Uses | Help
+          Home | Important Links | Disclaimer | Privacy policy | Terms & Conditions| FAQ | Feedback/Complaints | E-Samadhan
         </Typography>
+        <div>
+        {/* <BsFacebook />
+        <AiFillTwitterCircle /> */}
+        </div>
+        </div>
         <Typography variant='body2' style={{margin: '25px'}}>
-        Copyright © 2023 - All Rights Reserved - Official Website of Town and Country Planning Organisation, Government of India
+        © 2023-24 - All Rights Reserved - Department of Town & Country Planning, Govt of Himanchal Pardesh | Powered by- ABM Knowledgeware Pvt. ltd
         <br></br>
-        <span style={{marginLeft: '80px'}}>Note: Content on this website is published and managed by Town and Country Planning Organisation</span> 
-        <br></br>
-        <span style={{marginLeft: '-60px'}}>For any query regarding this website, please contact the web information manager- Mr. X (Additional Chief Planner)</span>
-        <br></br>
-         <span style={{marginLeft: '150px'}}> E-mail ID: xxxxxx[at]gov[dot]in, Phone: +91-XXXXXXXXXXXXX </span>
-        <br></br>
+        <p style={{marginLeft: '300px'}}>Last Updated On: XX/XX/XXXX, XX:XX:XX</p>
         </Typography>
-      <Box sx={{ display: 'flex', flexDirection: 'row', width: '100%'}}>
-      <img src="http://www.tcpo.gov.in/sites/default/files/vss.jpg" alt="image1" height='50px' style={{marginLeft: '200px', marginRight: '50px'}} />
-      <img src="http://www.tcpo.gov.in/sites/default/files/w3c.jpg" alt="image2" height='50px' style={{marginRight: '50px'}}  />
-      <img src="http://www.tcpo.gov.in/sites/default/files/icon_W1_a.jpg" alt="image3" height='50px' style={{marginRight: '50px'}}  />
-      <img src="http://www.tcpo.gov.in/sites/default/files/itqcr4.png" alt="image4" height='50px' style={{marginRight: '50px'}} />
-      </Box>
     </Box>
    
   );

@@ -122,7 +122,7 @@ const Facilation = () => {
           <Grid item xs={12} sm={6} md={2} key={card.title}>
             <Card className={classes.card} style={{background: 'linear-gradient(to bottom, #FFFFFF, #CCCCFF)'}}>
             <CardContent className={classes.transparentCard}>
-                <Typography gutterBottom variant="p" component="p" style={{fontSize: '12px', color: '#330032',fontWeight: 'bold'}}>
+                <Typography gutterBottom variant="p" component="p" style={{fontSize: '13px', color: '#00004D',fontWeight: 'bold'}}>
                   {card.title}
                 </Typography>
               </CardContent>
@@ -139,7 +139,7 @@ const Facilation = () => {
           </Grid>
         ))}
       </Grid>
-      <Button onClick={handleNextClick} style={{transform: 'translateX(1150px) translateY(-150px)'}}><AiOutlineDoubleRight style={{width: '30px', height: '30px', color: '#FFFFFF',padding: '10px',borderRadius: '50%', backgroundColor: '#1F4A7C'}} /></Button>
+      <Button onClick={handleNextClick} style={{transform: 'translateX(1180px) translateY(-150px)'}}><AiOutlineDoubleRight style={{width: '30px', height: '30px', color: '#FFFFFF',padding: '10px',borderRadius: '50%', backgroundColor: '#1F4A7C'}} /></Button>
     </div>
   );
 };

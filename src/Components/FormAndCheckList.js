@@ -10,7 +10,7 @@ const FormAndCheckList = () => {
     <div style={{}}>
       <Grid container spacing={3} alignItems="flex-start">
         <Grid item xs={12} md={6}>
-          <Paper style={{ height: '700px', padding: '16px', display: 'flex', flexDirection: 'column', background: '#1F4A7C' }}>
+          <Paper style={{ height: '700px', padding: '16px', display: 'flex', flexDirection: 'column', backgroundImage: 'url(http://www.tcpo.gov.in/sites/default/files/css_injector/images/links-bg.jpg)', backgroundSize: 'cover'}}>
             <Checklist />
             <Notification />
           </Paper>

@@ -5,19 +5,20 @@ import {HiOutlineClipboardDocumentList} from 'react-icons/hi2'
 import { Button } from '@material-ui/core';
 import { Divider } from '@material-ui/core';
 
+
 const useStyles = makeStyles({
   cardContainer: {
     display: 'flex',
     flexDirection: 'column',
     width: '500px',
     margin: '10px',
-    height: '480px',
-    // overflow: 'auto',
+    height: '280px',
+      // overflow: 'auto',
     // '& .MuiCardContent-root': {
     //   flexGrow: 1,
     //   overflow: 'auto'
     // },
-     background: 'linear-gradient(to right, #F5F5FF, #B3B3FF)',
+    //  background: 'linear-gradient(to right, #F5F5FF, #B3B3FF)',
   },
   heading: {
     padding: '10px',
@@ -41,45 +42,45 @@ const Checklist = () => {
     // handle read more click event
   }
   return (
-    
-    <Card className={classes.cardContainer} style={{boxShadow:'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'}}>
+    <div>
+    <Card className={classes.cardContainer} style={{boxShadow:'rgba(240, 240, 240, 1) 0px 0px 0px 10px'}}>
       <CardContent>
      <div style={{display: 'flex', flexDirection: 'row'}}>
      <HiOutlineClipboardDocumentList style={{width: '50px', height: '50px', color: '#154773'}}/>
-     <Typography variant="h5" component="h2" gutterBottom style={{fontSize: '22px', color: '#1F4A7C', fontWeight: 'bold'}}>
+     <Typography variant="h5" component="h2" gutterBottom style={{fontSize: '22px', color: '#000066', fontWeight: 'bold'}}>
           Form/CheckLists
         </Typography>
       </div>
       <List className={classes.list}>
           <ListItem>
-          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20201210_132526.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#1F4A7C', fontWeight: 'bold'}} class="screenReader" title="Circular Mandating Online Submission Of Applications" tabindex="91">Internal Procedure For Change Of Land Use ...</a>
+          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20201210_132526.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#207CBD', fontWeight: 'bold'}} class="screenReader" title="Circular Mandating Online Submission Of Applications" tabindex="91">Internal Procedure For Change Of Land Use ...</a>
           </ListItem>
           <Divider />
           <ListItem>
-          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20190524_122513.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#1F4A7C', fontWeight: 'bold'}} class="screenReader" title="Clarification Regarding Mis - Interpreting Of Basements" tabindex="92">Internal Procedure For Building Planning ...</a>
+          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20190524_122513.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#207CBD', fontWeight: 'bold'}} class="screenReader" title="Clarification Regarding Mis - Interpreting Of Basements" tabindex="92">Internal Procedure For Building Planning ...</a>
           </ListItem>
           <Divider />
           <ListItem>
-          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20160928_174624.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#1F4A7C', fontWeight: 'bold'}} class="screenReader" title="Notice For Publication Of Proposed Amendment(s) In Development Plans." tabindex="93">Inspection Procedure And Checklist Of ...</a>
+          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20160928_174624.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#207CBD', fontWeight: 'bold'}} class="screenReader" title="Notice For Publication Of Proposed Amendment(s) In Development Plans." tabindex="93">Inspection Procedure And Checklist Of ...</a>
           </ListItem>
           <Divider />
           <ListItem>
-          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20160928_173242.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#1F4A7C', fontWeight: 'bold'}} class="screenReader" title="Exemptions In Rural Areas-clarifications Thereof" tabindex="95">Form Application for composition of offences...</a>
+          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20160928_173242.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#207CBD', fontWeight: 'bold'}} class="screenReader" title="Exemptions In Rural Areas-clarifications Thereof" tabindex="95">Form Application for composition of offences...</a>
           </ListItem>
           <Divider />
           <ListItem>
-          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20160928_174203.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#1F4A7C', fontWeight: 'bold'}} class="screenReader" title="Amendment In Idp Shimla Notification Dated 28/06/2016." tabindex="94">Procedure And Guidelines For Obtaning Planning Permission...</a>
+          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20160928_174203.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#207CBD', fontWeight: 'bold'}} class="screenReader" title="Amendment In Idp Shimla Notification Dated 28/06/2016." tabindex="94">Procedure And Guidelines For Obtaning Planning Permission...</a>
           </ListItem>
           <Divider />
           <ListItem>
-          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20160928_174203.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#1F4A7C', fontWeight: 'bold'}} class="screenReader" title="Amendment In Idp Shimla Notification Dated 28/06/2016." tabindex="94">Procedure, Checklist For Obtaning Noc After...</a>
+          <a href="https://tcp.hp.gov.in/Application/uploadDocuments/notification/Notice20160928_174203.pdf" target="_blanck" style={{textDecoration: 'none', fontSize: '14px', color: '#207CBD', fontWeight: 'bold'}} class="screenReader" title="Amendment In Idp Shimla Notification Dated 28/06/2016." tabindex="94">Procedure, Checklist For Obtaning Noc After...</a>
           </ListItem>
           <Divider />
         </List>
-        <Button onClick={handleReadMoreClick} style={{width: '120px', height: '40px', margin: '10px',   padding: '5px', borderColor: '#4D004B', color: '#1F4A7C', border: '2px solid #1F4A7C', backgroundColor: 'transparent' }}>Read More +</Button>
       </CardContent>
       </Card>
-    
+      <Button onClick={handleReadMoreClick} style={{width: '120px', height: '40px', backgroundColor: '#012951', margin: '10px 10px 10px 25px',   padding: '5px', borderColor: '#001325', color: 'white', border: '2px solid #1F4A7C', }}>Read More +</Button>
+    </div>
   );
 };
 

@@ -10,37 +10,31 @@ const OfficeAddress = () => {
       <Typography variant="body1">
           <br></br>
           <span><ImLocation2 style={{marginRight: '10px'}}/></span>
-          Town Country Planning Organisation
+          Town Country Planning Department
           <br></br>
           Ministry of Housing and Urban Affairs
           <br></br>
           Government of India,
           <br></br>
-          E- Block, Vikas Bhawan
+          SDA Complex Block Number, 32A
           <br></br>
-          I.P. Estate
+          Shimla Bypass, Kasumpati, Shimla
           <br></br>
-          New Delhi - 110002
+          Himachal Pradesh - 171009
       </Typography>
-      <Typography variant="body1" style={{display: 'flex', flexDirection: 'row', margin: '10px 200px 0px 0px'}}>
-         <div><IoIosCall style={{margin: '5px'}}/></div>
+      <Typography variant="body1" style={{display: 'flex', flexDirection: 'row', marginRight: '140px', marginTop: '20px'}}>
+          <span><IoIosCall style={{margin: '5px'}}/></span>
+          +91-11-XXXXXXXX
           <br></br>
-          <div>
-          +91-11-23370306
+          +91-11-XXXXXXXX
           <br></br>
-          +91-11-23379353
-          <br></br>
-          +91-11-23379197
-          </div>
+          +91-11-XXXXXXXX
       </Typography>
-      <Typography variant="body1" style={{display: 'flex', flexDirection: 'row', margin: '10px 120px 0px 0px'}}>
-        <div><AiOutlineMail  style={{marginTop: '30px 50px 0px 0px', padding: '5px'}}/></div>
-        <div>
+      <Typography variant="body1" style={{display: 'flex', flexDirection: 'row', marginRight: '200px', marginTop: '10px'}}>
+        <span><AiOutlineMail style={{margin: '5px'}}/></span>
+          xyz@nic.in
           <br></br>
-          cp-tcpo-mud[at]nic[dot]in
-          <br></br>
-          cp[dot]tcpo[at]yahoo[dot]com
-        </div>
+          pqr@nic.in
       </Typography>
     </div>
   );

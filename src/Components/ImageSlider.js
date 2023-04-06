@@ -26,7 +26,7 @@ const ImageSlider = ({ images }) => {
     return (
         <div className="slideshow" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             {/* <button className="slideshow-button" onClick={handlePreviousClick}><FiChevronLeft /></button> */}
-            <img src={images[currentImageIndex]} alt="Slideshow" style={{maxWidth: '100%', height: 'auto'}}/>
+            <img src={images[currentImageIndex]} alt="Slideshow" style={{maxWidth: '1200px', height: '600px'}}/>
             <div onClick={handleClickOpen} style={{position: 'fixed', width: '50px',top: '270px', right: '0px', color: 'white', height: '250px', zIndex: '99999', borderTop: '30px solid transparent', borderBottom: '30px solid transparent', borderRight: '35px solid #1F4A7C', cursor: 'pointer'}}>
             <span style={{position: 'fixed', top: '390px', width: '220px', height: '50px', right: '-110px', rotate: '270deg', cursor: 'pointer'}}>Real Time Application status</span>
             </div>
