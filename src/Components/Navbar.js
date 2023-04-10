@@ -16,7 +16,7 @@ const Navbar = () => {
 //   };
 
   return (
-    <AppBar position="static" style={{background: '#1F4A7C', height: '44px'}} >
+    <AppBar position="static" style={{background: '#1F4A7C', height: '44px',marginLeft: '15px'}} >
       <Toolbar>
         <Button color='inherit' style={{marginLeft: '70px', marginBottom: '18px', fontSize: '12px', color: 'white'}}><FcHome style={{width: '30px', height: '30px'}}/></Button>
         <Button color="inherit" style={{marginLeft: '30px', marginBottom: '18px', fontSize: '12px', color: 'white'}}>About Us</Button>

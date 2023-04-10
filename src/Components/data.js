@@ -1,4 +1,4 @@
-import minister from '../Components/Icons-Images/Minister.jpeg'
+import sukhkisarkar from '../Components/Icons-Images/Sukhkisarkar.jpg'
 
 const images = [
     'http://www.tcpo.gov.in/sites/default/files/styles/…anner/public/newfile/bannertcpo.jpg?itok=kSK6QKSP',
@@ -7,7 +7,7 @@ const images = [
     'http://www.tcpo.gov.in/sites/default/files/styles/…nbanner/public/newfile/banner_1.jpg?itok=b501AfmH',
     'http://www.tcpo.gov.in/sites/default/files/styles/mainbanner/public/newfile/banner.jpg?itok=XcPHhWGL',
     'http://www.tcpo.gov.in/sites/default/files/styles/…nbanner/public/newfile/banner-6.jpg?itok=VuX4VPSd',
-    minister
+    sukhkisarkar
   ];
 
 export default images
