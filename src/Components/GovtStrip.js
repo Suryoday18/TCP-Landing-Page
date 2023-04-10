@@ -13,7 +13,7 @@ const GovtStrip = () => {
           <h4 style={{fontWeight: '30px', margin: '10px 10px', width: '125px', position: 'absolute', top: '-20px', backgroundColor: 'white'}}>हिमाचल प्रदेश सरकार</h4>
           <h2 style={{color: '#154773', margin: '20px 10px 10px 10px'}}>नगर एवम् ग्राम योजना विभाग</h2>
           <h2 style={{fontSize: '25px', margin: '0px 0px 35px 10px'}}>Town & Country Planning Department </h2>
-          <h6 style={{fontSize: '15.75px', color: '#154773',margin: '10px 10px 10px 310px', position: 'absolute', bottom:'-20px', backgroundColor: 'white'}}>Government of Himanchal Pardesh</h6>
+          <h6 style={{fontSize: '15.75px', color: '#154773',margin: '10px 10px 10px 310px', position: 'absolute', bottom:'-20px', backgroundColor: 'white'}}>Government of Himanchal Pradesh</h6>
           </div>
           <div>
             <img src={Himanchal} alt='himanchal' style={{width: '120px', height: '100px', margin: '10px 10px 10px 10px'}}/>
