@@ -36,7 +36,7 @@ function Strip() {
         <Typography variant="h6" component="div" style={{marginBottom: '24px', marginRight: '300px', fontSize: '14px'}}>
         Government of Himanchal Pradesh 
         </Typography> */}
-        <div style={{display: 'flex', flexDirection: 'row', marginRight: '120px'}}>
+        <div style={{display: 'flex', flexDirection: 'row', marginRight: '25%'}}>
           <BsFillVolumeUpFill className={classes.iconStyle}/>
           <DiAndroid className={classes.iconStyle}/>
           <AiFillWindows className={classes.iconStyle}/>
