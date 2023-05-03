@@ -6,7 +6,7 @@ const Objectives = () => {
         <div class="row">
             <div class="col-xs-12">
                 <div id="pageCont" class="screenReader" tabindex="43">
-                 <h2>Objectives</h2>
+                 <h3>Objectives</h3>
                     <ol>
                         <li>To encourage planned and systematic urban and rural growth in a comprehensive manner.</li>
                         <li>To stop haphazard constructions.</li>
