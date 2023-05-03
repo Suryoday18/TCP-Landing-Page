@@ -1,31 +1,211 @@
 import React from 'react';
-import { AppBar, Toolbar, Button, } from '@mui/material';
-// import MenuIcon from '@mui/icons-material/Menu';
+import { AppBar, Toolbar, Button, Divider} from '@mui/material';
+import { Menu, MenuItem } from '@mui/material';
 import {FcHome} from 'react-icons/fc'
+import './index.css'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
-  // const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorE2, setAnchorE2] = React.useState(null);
+  const [anchorE3, setAnchorE3] = React.useState(null);
+  const [anchorE4, setAnchorE4] = React.useState(null);
+  const [anchorE5, setAnchorE5] = React.useState(null);
+  const [anchorE6, setAnchorE6] = React.useState(null);
 
-  const handleClick = (event) => {
-    return null
-    // setAnchorEl(event.currentTarget);
+  const handleClickAboutUs = (event) => {
+    setAnchorEl(event.currentTarget);
   };
+  const handleClickRegulation = (event) => {
+    setAnchorE2(event.currentTarget)
+  }
+  const handleClickNotifications = (event) => {
+    setAnchorE3(event.currentTarget)
+  }
+  const handleActRules = (event) => {
+    setAnchorE4(event.currentTarget)
+  }
+  const handleMedia = (event) => {
+    setAnchorE5(event.currentTarget)
+  }
+  const handleClickGenral = (event) => {
+    setAnchorE6(event.currentTarget)
+  }
 
-//   const handleClose = () => {
-//     setAnchorEl(null);
-//   };
+  const handleClose = () => {
+    setAnchorEl(null);
+    setAnchorE2(null)
+    setAnchorE3(null);
+    setAnchorE4(null)
+    setAnchorE5(null);
+    setAnchorE6(null);
+  };
 
   return (
     <AppBar position="static" style={{background: '#1F4A7C', height: '44px',marginLeft: '15px'}} >
       <Toolbar>
-        <Button color='inherit' style={{marginLeft: '70px', marginBottom: '18px', fontSize: '12px', color: 'white'}}><FcHome style={{width: '30px', height: '30px'}}/></Button>
-        <Button color="inherit" style={{marginLeft: '30px', marginBottom: '18px', fontSize: '12px', color: 'white'}}>About Us</Button>
-        <Button color="inherit" style={{marginLeft: '30px', marginBottom: '18px',  color: 'white'}}>Planning Regulations</Button>
-        <Button color="inherit" onClick={handleClick} style={{marginLeft: '30px', marginBottom: '18px', fontSize: '12px', color: 'white'}}>Development Plan</Button>
-        <Button color='inherit' style={{marginLeft: '30px', marginBottom: '18px', fontSize: '12px', color: 'white'}}>Notifications / Orders</Button>
-        <Button color='inherit' style={{marginLeft: '30px', marginBottom: '18px', fontSize: '12px', color: 'white'}}>Act & Rules</Button>
-        <Button color="inherit" style={{marginLeft: '30px', marginBottom: '18px',  fontSize: '12px', color: 'white'}}>Media</Button>
-        {/* <Button color="inherit" style={{marginLeft: '20px', fontSize: '12px'}}>Act & Rules</Button> */}
+        <Button LinkComponent={Link} to='/' color='inherit' style={{marginLeft: '70px', marginBottom: '18px', fontSize: '12px', color: 'white'}}><FcHome style={{width: '30px', height: '30px'}}/></Button>
+        <Button color="inherit" onClick={handleClickAboutUs} style={{marginLeft: '30px', marginBottom: '18px', fontSize: '12px', color: 'white'}}>About Us</Button>
+        <Menu
+        anchorEl={anchorEl}
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+        PaperProps={{
+          style: {
+            backgroundColor: '#1F4A7C'
+          }
+        }}
+      >
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+          <Link style={{textDecoration: 'none', color: '#fff'}} to='/objectives'>
+          OBJECTIVE 
+          </Link>
+        </MenuItem>       
+        <Divider />
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/organizational-setup'>
+          ORGANIZATIONAL SETUP
+        </Link>
+        </MenuItem>
+        <Divider />
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/contact-us'>
+          CONTACT US
+        </Link>
+        </MenuItem>
+        <Divider />
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/employee-profile'>
+          EMPLOYEE PROFILE
+        </Link>
+        </MenuItem>
+        <Divider />
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/ex-employee-profile'>
+          EX-EMPLOYEE PROFILE
+        </Link>
+        </MenuItem>        
+        </Menu>
+        <Button color="inherit" onClick={handleClickRegulation} style={{marginLeft: '30px', marginBottom: '18px',  color: 'white'}}>Planning Regulations</Button>
+        <Menu
+        anchorEl={anchorE2}
+        open={Boolean(anchorE2)}
+        onClose={handleClose}
+        PaperProps={{
+          style: {
+            backgroundColor: '#1F4A7C'
+          }
+        }}
+      >
+        <Button color='inherit' onClick={handleClickGenral} style={{color: '#fff', fontSize: '12px'}}>GENERAL<span style={{marginLeft: '200px'}}>{'>'}</span></Button>
+        <Menu
+        anchorEl={anchorE6}
+        open={Boolean(anchorE6)}
+        onClose={handleClose}
+        PaperProps={{
+          style: {
+            backgroundColor: '#1F4A7C',
+            width: '150px',
+            height: '100px',
+            margin: '-40px 0px 0px 253px'
+          }
+        }}
+      >
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/appendix-1'>
+          APPENDIX-1
+        </Link>
+        </MenuItem> 
+        <Divider />
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/appendix-8'>
+          APPENDIX-8
+        </Link>
+        </MenuItem> 
+      </Menu>
+        <Divider />
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/apartment-colonies-regulation'>
+          APARTMENT/COLONIES REGULATION
+        </Link>
+        </MenuItem> 
+        </Menu>
+        <Button color="inherit" style={{marginLeft: '30px', marginBottom: '18px', fontSize: '12px', color: 'white'}}>Development Plan</Button>
+        <Button color='inherit' onClick={handleClickNotifications} style={{marginLeft: '30px', marginBottom: '18px', fontSize: '12px', color: 'white'}}>Notifications / Orders</Button>
+        <Menu
+        anchorEl={anchorE3}
+        open={Boolean(anchorE3)}
+        onClose={handleClose}
+        PaperProps={{
+          style: {
+            backgroundColor: '#1F4A7C'
+          }
+        }}
+      >
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/court-orders'>
+          COURT ORDERS
+        </Link>
+        </MenuItem> 
+        <Divider />
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/notifications-under-tcp-act'>
+          NOTIFICATIONS UNDER TCP ACT
+        </Link>
+        </MenuItem> 
+        <Divider />
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/service-matter'>
+          SERVICE MATTER
+        </Link>
+        </MenuItem> 
+        </Menu>
+        <Button color='inherit' onClick={handleActRules} style={{marginLeft: '30px', marginBottom: '18px', fontSize: '12px', color: 'white'}}>Act & Rules</Button>
+        <Menu
+        anchorEl={anchorE4}
+        open={Boolean(anchorE4)}
+        onClose={handleClose}
+        PaperProps={{
+          style: {
+            backgroundColor: '#1F4A7C'
+          }
+        }}
+      >
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/delegation-of-powers'>
+          DELEGATION OF POWER
+        </Link>
+        </MenuItem>
+        </Menu>
+        <Button color="inherit" onClick={handleMedia} style={{marginLeft: '30px', marginBottom: '18px',  fontSize: '12px', color: 'white'}}>Media</Button>
+        <Menu
+        anchorEl={anchorE5}
+        open={Boolean(anchorE5)}
+        onClose={handleClose}
+        PaperProps={{
+          style: {
+            backgroundColor: '#1F4A7C'
+          }
+        }}
+      >
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/photo-gallery'>
+          PHOTO GALLERY
+        </Link>
+        </MenuItem>
+        <Divider />
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/video-gallery'>
+          VIDEO GALLERY
+        </Link>
+        </MenuItem>
+        <Divider />
+        <MenuItem onClick={handleClose} style={{color: '#fff', fontSize: '12px'}}>
+        <Link style={{textDecoration: 'none', color: '#fff'}} to='/heritage-gallery'>
+          HERITAGE GALLERY
+        </Link>
+        </MenuItem>
+        </Menu>
         <Button color="inherit" style={{marginLeft: '30px', marginBottom: '18px',  fontSize: '12px', color: 'white'}}>RTI</Button>
       </Toolbar>
     </AppBar>
